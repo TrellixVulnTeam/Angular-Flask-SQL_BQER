@@ -1,1 +1,1 @@
-# Default Flask and Angular Project
+# Default Flask, Angular and SQL Project
