@@ -16,8 +16,9 @@ try:
         if(not dbConnectionString == None):
             engine = sqlalchemy.create_engine(dbConnectionString)
             con = engine.connect()
-except:
+except Exception as e:
     print("ERROR CONNECTING TO DATABASE")
+    print(e)
 finally:
     if(file != None):
         file.close()
